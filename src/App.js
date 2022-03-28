@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/card/Card';
+import Header from './components/header/Header';
+import Navbar from './components/navbar/Navbar';
+import data from './helper/data';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p> {'>>'} App.js is working</p>
+      
+      <Navbar/>
+      <Header/>
+      <Card places = {data}/>
     </div>
   );
 }
